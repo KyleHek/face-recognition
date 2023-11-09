@@ -32,6 +32,23 @@ class App extends Component {
     this.state = initialState;
   }
 
+  componentDidMount() {
+    // Check for connection to the backend
+    fetch('http://localhost:3000/', {
+      method: 'get',
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Unable to connect to the backend");
+        }
+      })
+      .catch((error) => {
+        toast.error(error.message, {
+          position: toast.POSITION.TOP_CENTER,
+      });
+    });
+  }
+
   loadUser = (data) => {
     this.setState({user: {
       id: data.id,
