@@ -92,8 +92,8 @@ class App extends Component {
       })
     })
     .then((response) => {
-      if (response.status === 500) {
-        throw new Error("Sorry, we are currently unable to connect to the API");
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
       }
       return response.json();
     })
