@@ -43,7 +43,7 @@ class Register extends React.Component {
             });
             return;
         }
-        fetch('http://localhost:3000/register', 
+        fetch('https://face-recognition-api-eg88.onrender.com/register', 
         {
             method: 'post',
             headers: {

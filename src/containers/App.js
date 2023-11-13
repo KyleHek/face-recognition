@@ -34,7 +34,7 @@ class App extends Component {
 
   componentDidMount() {
     // Check for connection to the backend
-    fetch('http://localhost:3000/', {
+    fetch('https://face-recognition-api-eg88.onrender.com', {
       method: 'get',
     })
       .then((response) => {
@@ -98,7 +98,7 @@ class App extends Component {
       return;
     }
     this.setState({imageUrl: this.state.input});
-    fetch('http://localhost:3000/imageurl', {
+    fetch('https://face-recognition-api-eg88.onrender.com/imageurl', {
       method: 'post',
       headers: {
         'Content-Type': 'application/json'
@@ -117,7 +117,7 @@ class App extends Component {
     .then((result) => {
       const parsedResponse = JSON.parse(result);
       if (parsedResponse) {
-        fetch('http://localhost:3000/image', {
+        fetch('https://face-recognition-api-eg88.onrender.com/image', {
           method: 'put',
           headers: {
             'Content-Type': 'application/json'
