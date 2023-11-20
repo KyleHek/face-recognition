@@ -17,7 +17,3 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 For further information about the API look at [face-recognition-api](https://github.com/).	
 
 Look at [Working demo](https://face-recognition-dsag.onrender.com/) deployed at [Render](https://render.com/).
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
