@@ -14,6 +14,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * [tachyons](https://tachyons.io/)
 	* For ready to use CSS styled components
 
-For further information about the API look at [face-recognition-api](https://github.com/).	
+For further information about the API look at [face-recognition-api](https://github.com/face-recognition-api).	
 
 Look at [Working demo](https://face-recognition-dsag.onrender.com/) deployed at [Render](https://render.com/).
